@@ -316,7 +316,7 @@ header {
   border-radius: 12px;
 }
 
-.feature-box h4 {
+.feature-box h3 {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -325,7 +325,7 @@ header {
   color: #e2e8f0;
 }
 
-.feature-box h4 svg {
+.feature-box h3 svg {
   width: 22px;
   height: 22px;
   stroke: var(--secondary-color);
@@ -398,6 +398,11 @@ header {
 .form-control:focus {
   border-color: var(--primary-color);
   box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.25);
+}
+
+.form-control::placeholder {
+  color: #94a3b8;
+  opacity: 1;
 }
 
 /* --- Footer --- */
