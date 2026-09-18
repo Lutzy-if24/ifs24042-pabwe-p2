@@ -193,7 +193,7 @@
             </div>
           </div>
 
-          <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Terima kasih! Tim konsultan Aether AI akan segera menghubungi Anda.');">
+          <form class="contact-form" id="contactForm" action="#" method="POST">
             <div class="form-group">
               <label for="name">Nama Lengkap</label>
               <input type="text" id="name" class="form-control" placeholder="Contoh: Budi Santoso" required>
@@ -233,6 +233,14 @@
       <p>&copy; 2026 Aether Intelligence Studio. All rights reserved. Praktikum Pemrograman Web.</p>
     </div>
   </footer>
+
+  <!-- Script: Penanganan Form Kontak (dipindah dari inline onsubmit) -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      alert('Terima kasih! Tim konsultan Aether AI akan segera menghubungi Anda.');
+    });
+  </script>
 
 </body>
 </html>

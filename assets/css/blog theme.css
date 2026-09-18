@@ -103,3 +103,32 @@ body {
 .badge.text-success {
   color: #8ee6a6 !important; /* sebelumnya #198754 -> rasio 3.34, sekarang ~10.12 */
 }
+
+/* --- Utility layout (menggantikan inline style="") --- */
+.max-w-720 {
+  max-width: 720px;
+}
+
+.max-w-860 {
+  max-width: 860px;
+}
+
+.cover-img-240 {
+  height: 240px;
+  object-fit: cover;
+}
+
+.cover-img-440 {
+  max-height: 440px;
+  object-fit: cover;
+}
+
+.comment-box {
+  background-color: #151d30;
+  border: 1px solid #243049;
+}
+
+.avatar-circle-44 {
+  width: 44px;
+  height: 44px;
+}
